@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css" />
+  <title>Joey's Account Creator</title>
+</head>
+<body>
+  <header>
+    <h1>Sign up to Joey's Excellent Community</h1>
+  </header>
+  <main>
+    <form action="./welcome.html" id="signupForm" method="GET">
+      <label for="firstName">First name:</label>
+      <input
+        type="text"
+        id="firstName"
+        class="form-input"
+        name="firstName"
+        required
+      />
+
+      <label for="lastName">Last name:</label>
+      <input
+        type="text"
+        id="lastName"
+        class="form-input"
+        name="lastName"
+        required
+      />
+
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        class="form-input"
+        name="username"
+        required
+      />
+
+      <label for="avatarUrl">Avatar URL:</label>
+      <input
+        type="text"
+        class="form-input"
+        id="avatarUrl"
+        name="avatarUrl"
+      />
+
+      <p id="errorMessage" aria-live="assertive"></p>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </main>
+  <script src="./index.js" />
+</body>
+</html>
