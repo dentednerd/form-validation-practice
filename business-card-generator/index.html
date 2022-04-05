@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css" />
+  <title>Joey's Business Card Generator</title>
+</head>
+<body>
+  <header>
+    <h1>Joey's Business Card Generator</h1>
+  </header>
+  <main>
+
+    <form action="./yourcard.html" id="signupForm" method="GET" autocomplete="false">
+      <label for="firstName">First name:</label>
+      <input
+        type="text"
+        id="firstName"
+        class="form-input"
+        name="firstName"
+        autocomplete="false"
+        required
+      />
+
+      <label for="lastName">Last name:</label>
+      <input
+        type="text"
+        id="lastName"
+        class="form-input"
+        name="lastName"
+        autocomplete="false"
+        required
+      />
+
+      <label for="company">Company:</label>
+      <input
+        type="text"
+        id="company"
+        class="form-input"
+        name="company"
+        autocomplete="false"
+        required
+      />
+
+      <label for="jobTitle">Job title:</label>
+      <input
+        type="text"
+        id="jobTitle"
+        class="form-input"
+        name="jobTitle"
+        autocomplete="false"
+        required
+      />
+
+      <label for="email">Email address:</label>
+      <input
+        type="text"
+        id="email"
+        class="form-input"
+        name="email"
+        autocomplete="false"
+        required
+      />
+
+      <label for="phone">Telephone:</label>
+      <input
+        type="text"
+        id="phone"
+        class="form-input"
+        name="phone"
+        autocomplete="false"
+        required
+      />
+
+      <p id="errorMessage" aria-live="assertive"></p>
+
+      <button type="submit">Create your business card</button>
+    </form>
+  </main>
+  <script src="./index.js" />
+</body>
+</html>

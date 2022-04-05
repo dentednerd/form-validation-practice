@@ -5,20 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./index.css" />
-  <title>Joey's Account Creator</title>
+  <title>Sign up: Joey's Excellent Community</title>
 </head>
 <body>
   <header>
-    <h1>Sign up to Joey's Excellent Community</h1>
+    <h1>Joey's Excellent Community</h1>
   </header>
   <main>
+
     <form action="./welcome.html" id="signupForm" method="GET">
+      <h2>Sign up here</h2>
       <label for="firstName">First name:</label>
       <input
         type="text"
         id="firstName"
         class="form-input"
         name="firstName"
+        autocomplete="off"
         required
       />
 
@@ -28,6 +31,7 @@
         id="lastName"
         class="form-input"
         name="lastName"
+        autocomplete="off"
         required
       />
 
@@ -37,6 +41,7 @@
         id="username"
         class="form-input"
         name="username"
+        autocomplete="off"
         required
       />
 
@@ -46,6 +51,7 @@
         class="form-input"
         id="avatarUrl"
         name="avatarUrl"
+        autocomplete="off"
       />
 
       <p id="errorMessage" aria-live="assertive"></p>
